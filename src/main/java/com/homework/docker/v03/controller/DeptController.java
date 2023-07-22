@@ -14,17 +14,17 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/test")
 public class DeptController {
-    private final DeptService memberService;
+    private final DeptService deptService;
 
     @PostMapping("/dept/post")
-    public ResponseEntity<DeptResponseDto> saveMember(@RequestBody DeptSaveRequestDto requestDto) {
-        DeptResponseDto member = memberService.save(requestDto);
-        return new ResponseEntity<>(member, HttpStatus.CREATED);
+    public ResponseEntity<DeptResponseDto> saveDept(@RequestBody DeptSaveRequestDto requestDto) {
+        DeptResponseDto dept = deptService.save(requestDto);
+        return new ResponseEntity<>(dept, HttpStatus.CREATED);
     }
 
     @GetMapping("/dept/{id}")
     public ResponseEntity<DeptResponseDto> getDept(@PathVariable Long id){
-        DeptResponseDto deptMember = memberService.findById(id);
+        DeptResponseDto deptMember = deptService.findById(id);
         if(deptMember == null) return ResponseEntity.notFound().build();
         return ResponseEntity.ok(deptMember);
     }

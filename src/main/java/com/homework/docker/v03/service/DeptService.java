@@ -12,16 +12,16 @@ import javax.transaction.Transactional;
 @RequiredArgsConstructor
 @Service
 public class DeptService {
-    private final DeptRepository memberRepository;
+    private final DeptRepository deptRepository;
 
     @Transactional
     public DeptResponseDto save(DeptSaveRequestDto requestDto) {
-        Dept member = memberRepository.save(requestDto.toEntity());
-        return new DeptResponseDto(member);
+        Dept dept = deptRepository.save(requestDto.toEntity());
+        return new DeptResponseDto(dept);
     }
 
     public DeptResponseDto findById(Long id) {
-        Dept entity = memberRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Member Not Found"));
+        Dept entity = deptRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Member Not Found"));
         return new DeptResponseDto(entity);
     }
 }
