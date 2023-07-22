@@ -1,30 +1,35 @@
 # be-homework-docker
 
-## Docker Hub
-![dockerHubs](https://github.com/Jeonni/be-homework-docker/assets/69911004/0a3eecf6-d10a-43c8-8ebd-f55c5827687e)<br/><br/><br/>
+## Docker Hubs
+![DockerHubs](https://github.com/Jeonni/be-homework-docker/assets/69911004/ce7c0374-dbdb-4547-a6be-48383e88c8e0)<br/><br/><br/>
 
+## Docker Containers
+![DockerContainers](https://github.com/Jeonni/be-homework-docker/assets/69911004/fe4c3a23-20d0-4567-92f1-910c1a359b21)<br/><br/><br/>
 
 
 ## Docker v-0.1
-#### SpringBoot 애플리케이션 0.1 버전을 도커 이미지로 만들고 도커 이미지 저장소에 등록
 ##### - http://host:8080/test/hello 로 API 주소 설정
 
-<br/>1. Container<br/>
-![v-01빌드이미지](https://github.com/Jeonni/be-homework-docker/assets/69911004/14fa0e51-5d13-4ba8-b0f8-a9c3c4240595)
-2. HTML<br/>
-![v-01HTML](https://github.com/Jeonni/be-homework-docker/assets/69911004/04bfe602-e2dd-404b-9cea-992636673020)<br/><br/><br/>
+### - GET MAPPING <br/>
+<img src="https://github.com/Jeonni/be-homework-docker/assets/69911004/45235c10-e2fc-4aac-a437-f7f870528a17.png"  width="750"><br/><br/><br/>
 
 
 
-## Docker v-0.2 (JPA 적용)
-#### SpringBoot 애플리케이션 0.1 버전에 아래 내용을 추가하여 0.2 버전으로 개선
+## Docker v-0.2 
 ##### - 응답 json {”sabun” : 1, “name” : “jeon”, “dept_cd” : “CS001023004”, “dept_nm” : “컨테이너 실습”, “role_cd” : “EEF9852”, “role_nm” : “STUDENT”}
-##### - http://host:8080/test/member/1 에 해당하는 API 작성
+##### - http://host:8080/test/member/1 에 해당하는 API 작성 + JPA 적용
 
-1. Container<br/>
-![v-02빌드이미지](https://github.com/Jeonni/be-homework-docker/assets/69911004/ab1f3440-1152-4b93-86b4-c0d92fc93fde)
-2. POSTMAN<br/>
-2-1. POST MAPPING<br/>![v-02POST](https://github.com/Jeonni/be-homework-docker/assets/69911004/783874ec-8843-4541-80f3-7bb6e3682bc9)<br/>
-2.2. GET MAPPING<br/>![v-02GET](https://github.com/Jeonni/be-homework-docker/assets/69911004/6242d34f-c1eb-48b2-80b8-1c9ee14c043e)<br/>
-3. HTML<br/>
-![v-02HTML](https://github.com/Jeonni/be-homework-docker/assets/69911004/6237a45c-e7c8-4a01-a4fc-5e242b755c83)
+#### 🔸 POST MAPPING <br/>
+<img src="https://github.com/Jeonni/be-homework-docker/assets/69911004/2b5720a6-acf7-4f9a-8e8b-eaace916b65f.png"  width="750"><br/>
+#### 🔹 GET MAPPING<br/>
+<img src="https://github.com/Jeonni/be-homework-docker/assets/69911004/dbfa9811-c7d4-43a1-bd09-d3d1ce67e0d2.png"  width="750"><br/><br/><br/>
+
+
+## Docker v-0.3
+##### - 응답 json {”id” : 1, “dept_cd” : “CS001023004”, “dept_nm” : “컨테이너 실습”, “level” : 3, “rel_dept_cd” : “CS0010230000”, “rel_dept_nm” : “수강생대표팀”}
+##### - http://host:8080/test/dept/1 에 해당하는 API 작성 + JPA 적용
+
+#### 🔸 POST MAPPING <br/>
+<img src="https://github.com/Jeonni/be-homework-docker/assets/69911004/36b25ef0-24fb-4bfc-8e46-98f6271a4c10.png"  width="750"><br/>
+#### 🔹 GET MAPPING<br/>
+<img src="https://github.com/Jeonni/be-homework-docker/assets/69911004/4bac68e6-4c78-4a14-89e2-e452e5c9313d.png"  width="750"><br/>
